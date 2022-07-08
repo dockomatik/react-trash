@@ -1,13 +1,187 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope:wght@500;700&family=Mukta:wght@600&display=swap");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  background: lightgray;
 }
+
+.header {
+  position: relative;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #fff;
+  margin: 2rem 5rem;
+  padding: 1rem;
+}
+
+.logo {
+  background: #fff;
+  font-weight: bold;
+}
+/* Logo Picture */
+.logo-container {
+  position: relative;
+  line-height: 2rem;
+}
+
+.logo-picture {
+  position: absolute;
+  transform: scale(1.5);
+  bottom: 1.7rem;
+  left: 4rem;
+}
+
+/* Input */
+.input {
+  border-radius: 2rem;
+  padding: 0.8rem 11rem;
+  border: 1px solid lightgray;
+  box-shadow: 1px 5px lightgray;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.services {
+  position: relative;
+  background: #fff;
+  padding: 0.8rem 3rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid #fff;
+  font-size: 1.5rem;
+}
+
+.services:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  box-shadow: 1px 5px lightgray;
+}
+
+.services:active {
+  border: 1px solid #f8f8f8;
+  background-color: #f8f8f8;
+  box-shadow: 1px 5px #f8f8f8;
+  transform: translateY(4px);
+  transform: scale(0.95);
+}
+
+.schedule {
+  background: #fff;
+  padding: 0.8rem 3rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid #fff;
+  font-size: 1.5rem;
+}
+
+.schedule:hover {
+  cursor: pointer;
+  background-color: #f8f8f8;
+  border: 1px solid #f8f8f8;
+  box-shadow: 1px 5px lightgray;
+}
+
+.schedule:active {
+  border: 1px solid #f8f8f8;
+  background-color: #f8f8f8;
+  box-shadow: 1px 5px #f8f8f8;
+  transform: translateY(4px);
+  transform: scale(0.95);
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  background: #fff;
+  border: 1px solid lightgray;
+  box-shadow: 1px 5px lightgray;
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  background-color: #f8f8f8;
+  box-shadow: 1px 5px lightgray;
+}
+
+.btn:active {
+  transform: translateY(4px);
+  transform: scale(0.95);
+  background-color: #fff;
+}
+
+/* drop list box */
+
+.drop-list {
+  position: absolute;
+  list-style: none;
+  background: #fff;
+  padding: 0 2rem;
+  left: 22rem;
+  margin-top: 1.5rem;
+  margin-right: 5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  display: none;
+}
+.drop-list2 {
+  position: absolute;
+  list-style: none;
+  background: #fff;
+  padding: 0 2rem;
+  left: 22rem;
+  margin-top: 1.5rem;
+  margin-right: 5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  display: block;
+}
+
+/* .drop-list:hover {
+  display: block;
+} */
+
+.drop-list > li {
+  padding: 0.6rem 0 1rem 0;
+  margin-left: 5rem;
+}
+
+hr {
+  width: 17rem;
+}
+
+.list-items svg {
+  position: absolute;
+  left: 3.5rem;
+}
+
+/* hide list-box */
+
+/* .hide-list {
+  display: none;
+} */
