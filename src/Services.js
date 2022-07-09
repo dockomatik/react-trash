@@ -1,25 +1,32 @@
 import React, { useState } from "react";
 
 const Services = () => {
-  const [changeClass, setChangeClass] = useState("drop-list");
-  function changer() {
-    setChangeClass("drop-list2");
-  }
+  // const [changeClass, setChangeClass] = useState("drop-list");
+  // function changer() {
+  //   setChangeClass("drop-list2");
+  // }
 
-  function returner() {
-    setChangeClass("drop-list");
-  }
+  // function returner() {
+  //   setChangeClass("drop-list");
+  // }
+  const [toggle, setToggle] = useState(false);
+
+  const toggler = () => {
+    setToggle((prev) => !prev);
+  };
 
   return (
     <nav>
       <button
+        onMouseEnter={toggler}
+        onMouseLeave={toggler}
         className="services"
-        onMouseEnter={changer}
-        onMouseLeave={returner}
+        // onMouseEnter={changer}
+        // onMouseLeave={returner}
       >
         Services
       </button>
-      <ul className={changeClass}>
+      <ul className={toggle ? "drop-list2" : "drop-list"}>
         <li className="list-items">
           <svg
             className="list-icons"

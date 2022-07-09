@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Button = () => {
+  const [click, setClick] = useState(false);
+
   const handleClick = () => {
-    console.log("Hello");
+    setClick((prev) => !prev);
   };
+
   return (
-    <div>
+    <nav className="sign-in">
       <button className="btn" onClick={handleClick}>
         Sign In
       </button>
-    </div>
+      <div className={click ? "drop-down-sign-in-active" : "drop-down-sign-in"}>
+        <input className="input-user-password"></input>
+        <br />
+        <input className="input-user-password"></input>
+        <button className="inner-btn">Sign In</button>
+      </div>
+    </nav>
   );
 };
 

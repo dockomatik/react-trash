@@ -114,6 +114,7 @@ dd {
 }
 
 .btn {
+  position: relative;
   cursor: pointer;
   padding: 0.8rem 3rem;
   font-size: 1rem;
@@ -133,6 +134,18 @@ dd {
   transform: translateY(4px);
   transform: scale(0.95);
   background-color: #fff;
+}
+
+.inner-btn {
+  position: relative;
+  cursor: pointer;
+  padding: 0.3rem 3rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  background: #fff;
+  border: 1px solid lightgray;
+  box-shadow: 1px 5px lightgray;
+  font-size: 1.5rem;
 }
 
 /* drop list box */
@@ -159,14 +172,28 @@ dd {
   margin-right: 5rem;
   border-radius: 1rem;
   font-size: 1.5rem;
-  display: block;
+}
+.drop-list3 {
+  position: absolute;
+  list-style: none;
+  background: #fff;
+  padding: 0 2rem;
+  left: 37rem;
+  margin-top: 1.5rem;
+  margin-right: 5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
 }
 
-/* .drop-list:hover {
-  display: block;
-} */
-
 .drop-list > li {
+  padding: 0.6rem 0 1rem 0;
+  margin-left: 5rem;
+}
+.drop-list2 > li {
+  padding: 0.6rem 0 1rem 0;
+  margin-left: 5rem;
+}
+.drop-list3 > li {
   padding: 0.6rem 0 1rem 0;
   margin-left: 5rem;
 }
@@ -179,9 +206,65 @@ hr {
   position: absolute;
   left: 3.5rem;
 }
+.list-items2 svg {
+  position: absolute;
+  left: 3.5rem;
+}
+.list-items3 svg {
+  position: absolute;
+  left: 3.5rem;
+}
 
-/* hide list-box */
+/* Sign in button / nav */
 
-/* .hide-list {
+.sign-in {
+  position: relative;
+}
+.sign-in-active {
+  position: relative;
+}
+
+.drop-down-sign-in {
   display: none;
-} */
+  position: absolute;
+  background: #fff;
+  padding: 2rem 2rem;
+  margin: 1.5rem;
+  margin-left: 0.2rem;
+  border-radius: 1rem;
+  left: -14.5rem;
+  box-shadow: 1.5px 5px rgb(179, 176, 176);
+}
+.drop-down-sign-in-active {
+  position: absolute;
+  background: #fff;
+  padding: 2rem 2rem;
+  margin: 1.5rem;
+  margin-left: 0.2rem;
+  border-radius: 1rem;
+  left: -14.5rem;
+  box-shadow: 1.5px 5px rgb(179, 176, 176);
+}
+
+.input-user-password {
+  margin: 1rem auto;
+  padding: 1rem 5rem;
+  border-radius: 3rem;
+  border: 2px solid lightgray;
+  box-shadow: 1px 5px lightgray;
+}
+
+.input-user-password:focus {
+  outline: none;
+}
+
+.inner-btn {
+  font-size: 1.2rem;
+  margin-left: 6rem;
+}
+
+.inner-btn:active {
+  transform: translateY(4px);
+  transform: scale(0.95);
+  background-color: #fff;
+}
