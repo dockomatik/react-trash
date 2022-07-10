@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Button = () => {
   const [click, setClick] = useState(false);
@@ -6,6 +6,12 @@ const Button = () => {
   const handleClick = () => {
     setClick((prev) => !prev);
   };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", () => {
+      setClick(false);
+    });
+  });
 
   return (
     <nav className="sign-in">
