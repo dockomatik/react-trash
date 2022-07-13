@@ -18,7 +18,10 @@ const Button = () => {
       <button className="btn" onClick={handleClick}>
         Sign In
       </button>
-      <div className={click ? "drop-down-sign-in-active" : "drop-down-sign-in"}>
+      <div
+        onMouseDown={(e) => e.stopPropagation()}
+        className={click ? "drop-down-sign-in-active" : "drop-down-sign-in"}
+      >
         <input className="input-user-password"></input>
         <br />
         <input className="input-user-password"></input>
